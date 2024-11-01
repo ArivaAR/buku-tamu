@@ -1,0 +1,227 @@
+<style>
+  .registration-form {
+    border-radius: 15px;
+    background-color: #11235a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .nickname {
+    color: #fff;
+    font: 400 20px 'Lao Sans Pro', sans-serif;
+  }
+  
+  .form-container {
+    align-self: stretch;
+    display: flex;
+    margin-top: 43px;
+    min-height: 651px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .form-field {
+    display: flex;
+    min-height: 54px;
+    width: 100%;
+    align-items: center;
+    gap: 40px 70px;
+    color: #fff;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    font: 400 34px/1.2 Coolvetica, sans-serif;
+  }
+  
+  .field-label {
+    align-self: stretch;
+    width: 240px;
+    margin: auto 0;
+  }
+  
+  .field-input {
+    border-radius: 13px;
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    width: 836px;
+    height: 54px;
+    flex: 1;
+    flex-basis: 0%;
+    margin: auto 0;
+    border: 3px solid #f6eca9;
+  }
+  
+  .date-input {
+    border-radius: 13px;
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    min-height: 54px;
+    align-items: center;
+    gap: 40px 70px;
+    justify-content: end;
+    width: 320px;
+    margin: auto 0;
+    padding: 22px 13px;
+    border: 3px solid #f6eca9;
+  }
+  
+  .calendar-icon {
+    aspect-ratio: 2;
+    object-fit: contain;
+    object-position: center;
+    width: 22px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .gender-options {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    align-items: center;
+    gap: 40px 47px;
+    justify-content: space-between;
+    width: 265px;
+    margin: auto 0;
+  }
+  
+  .gender-option {
+    align-self: stretch;
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+    gap: 15px;
+    justify-content: start;
+    width: 109px;
+    margin: auto 0;
+  }
+  
+  .radio-button {
+    background-color: #fff;
+    border-radius: 50%;
+    align-self: stretch;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin: auto 0;
+    border: 3px solid #f6eca9;
+  }
+  
+  .textarea-field {
+    display: flex;
+    margin-top: 33px;
+    min-height: 98px;
+    width: 100%;
+    align-items: start;
+    gap: 40px 70px;
+    color: #fff;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    font: 400 34px/1.2 Coolvetica, sans-serif;
+  }
+  
+  .textarea-input {
+    background-color: #fff;
+    display: flex;
+    min-width: 240px;
+    width: 836px;
+    height: 98px;
+    flex: 1;
+    flex-basis: 0%;
+    border: 3px solid #f6eca9;
+  }
+  
+  .submit-button {
+    align-self: stretch;
+    background-color: #596fb7;
+    box-shadow: 8px 6px 0px 2px #000;
+    margin-top: 43px;
+    min-height: 77px;
+    width: 300px;
+    max-width: 100%;
+    color: #f6eca9;
+    padding: 18px 29px;
+    font: 400 34px/1.2 Coolvetica, sans-serif;
+    border: 2px solid #f6eca9;
+  }
+  
+  @media (max-width: 991px) {
+    .form-container {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .form-field,
+    .textarea-field {
+      max-width: 100%;
+    }
+  
+    .gender-options,
+    .gender-option {
+      white-space: initial;
+    }
+  
+    .submit-button {
+      margin-top: 40px;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  </style>
+  
+  <section class="registration-form">
+    <h2 class="nickname">{NICK}</h2>
+    <form class="form-container">
+      <div class="form-field">
+        <label for="name" class="field-label">Nama</label>
+        <input type="text" id="name" class="field-input" aria-label="Nama">
+      </div>
+      <div class="form-field">
+        <label for="phone" class="field-label">Nomor HP</label>
+        <input type="tel" id="phone" class="field-input" aria-label="Nomor HP">
+      </div>
+      <div class="form-field">
+        <label for="email" class="field-label">Email</label>
+        <input type="email" id="email" class="field-input" aria-label="Email">
+      </div>
+      <div class="form-field">
+        <label for="date" class="field-label">Tanggal</label>
+        <div class="date-input">
+          <input type="date" id="date" aria-label="Tanggal">
+          <img src="https://cdn.builder.io/api/v1/image/assets/c4e4ce5170a7404fac6bdd6b94daba06/8e3aaf47f4cda4427d33f73efa0d753e2e73cb283318002c3bd1d609faca7787?apiKey=c4e4ce5170a7404fac6bdd6b94daba06&" alt="" class="calendar-icon">
+        </div>
+      </div>
+      <div class="form-field">
+        <span class="field-label">Jenis Kelamin</span>
+        <div class="gender-options">
+          <div class="gender-option">
+            <input type="radio" id="male" name="gender" class="radio-button" aria-label="Laki-laki">
+            <label for="male">LAKI</label>
+          </div>
+          <div class="gender-option">
+            <input type="radio" id="female" name="gender" class="radio-button" aria-label="Perempuan">
+            <label for="female">BINI</label>
+          </div>
+        </div>
+      </div>
+      <div class="textarea-field">
+        <label for="address" class="field-label">Alamat</label>
+        <textarea id="address" class="textarea-input" aria-label="Alamat"></textarea>
+      </div>
+      <div class="textarea-field">
+        <label for="purpose" class="field-label">Tujuan</label>
+        <textarea id="purpose" class="textarea-input" aria-label="Tujuan"></textarea>
+      </div>
+      <button type="submit" class="submit-button">KONFIRMASI</button>
+    </form>
+  </section>
+  

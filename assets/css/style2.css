@@ -1,0 +1,176 @@
+.registration-form {
+  border-radius: 15px;
+  background-color: #11235a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 15%;
+}
+
+.nickname {
+  color: #fff;
+  font: 400 20px 'Lao Sans Pro', sans-serif;
+}
+
+.form-container {
+  align-self: stretch;
+  display: flex;
+  margin-top: 10px;
+  min-height: 651px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  min-height: 54px;
+  width: 100%;
+  align-items: center;
+  gap: 10px 70px;
+  color: #fff;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0 5px;
+  font: 400 34px/1.2 Coolvetica, sans-serif;
+  margin-bottom: 5%;
+}
+
+.field-label {
+  align-self: stretch;
+  width: 240px;
+  margin: auto 0;
+}
+
+.field-input {
+  border-radius: 13px;
+  background-color: #fff;
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  width: 836px;
+  height: 54px;
+  flex: 1;
+  flex-basis: 0%;
+  margin: auto 0;
+  border: 3px solid #f6eca9;
+}
+
+.date-input {
+  border-radius: 13px;
+  background-color: #fff;
+  align-self: stretch;
+  min-width: 240px;
+  align-items: center;
+  gap: 40px 70px;
+  justify-content: end;
+  width: 220px;
+  margin: auto 0;
+  border: 3px solid #f6eca9;
+}
+
+.calendar-icon {
+  aspect-ratio: 2;
+  object-fit: contain;
+  object-position: center;
+  width: 22px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.gender-options {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 40px 47px;
+  justify-content: space-between;
+  width: 265px;
+  margin: auto 0;
+}
+
+.gender-option {
+  align-self: stretch;
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+  gap: 15px;
+  justify-content: start;
+  width: 109px;
+  margin: auto 0;
+}
+
+.radio-button {
+  background-color: #fff;
+  border-radius: 50%;
+  align-self: stretch;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin: auto 0;
+  border: 3px solid #f6eca9;
+}
+
+.textarea-field {
+  display: flex;
+  margin-top: 33px;
+  min-height: 98px;
+  width: 100%;
+  align-items: start;
+  gap: 40px 70px;
+  color: #fff;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0 5px;
+  font: 400 34px/1.2 Coolvetica, sans-serif;
+}
+
+.textarea-input {
+  background-color: #fff;
+  display: flex;
+  min-width: 240px;
+  width: 836px;
+  height: 98px;
+  flex: 1;
+  flex-basis: 0%;
+  border: 3px solid #f6eca9;
+}
+
+.submit-button {
+  align-self: stretch;
+  background-color: #596fb7;
+  box-shadow: 8px 6px 0px 2px #000;
+  margin-top: 43px;
+  min-height: 77px;
+  width: 300px;
+  max-width: 100%;
+  color: #f6eca9;
+  padding: 18px 29px;
+  font: 400 34px/1.2 Coolvetica, sans-serif;
+  border: 2px solid #f6eca9;
+}
+
+@media (max-width: 991px) {
+  .form-container {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .form-field,
+  .textarea-field {
+    max-width: 100%;
+  }
+
+  .gender-options,
+  .gender-option {
+    white-space: initial;
+  }
+
+  .submit-button {
+    margin-top: 40px;
+    white-space: initial;
+    padding: 0 20px;
+  }
+}

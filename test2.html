@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Bouncy</title>
+    <link rel="stylesheet" href="assets/css/style2.css">
+   
+</head>
+<body>
+    <section class="registration-form">
+        <h2 class="nickname">{NICK}</h2>
+        <form class="form-container">
+          <div class="form-field">
+            <label for="name" class="field-label">Nama</label>
+            <input type="text" id="name" class="field-input" aria-label="Nama">
+          </div>
+          <div class="form-field">
+            <label for="phone" class="field-label">Nomor HP</label>
+            <input type="tel" id="phone" class="field-input" aria-label="Nomor HP">
+          </div>
+          <div class="form-field">
+            <span class="field-label">Jenis Kelamin</span>
+            <div class="gender-options">
+              <div class="gender-option">
+                <input type="radio" id="male" name="gender" class="radio-button" aria-label="Laki-laki">
+                <label for="male">LAKI</label>
+              </div>
+              <div class="gender-option">
+                <input type="radio" id="female" name="gender" class="radio-button" aria-label="Perempuan">
+                <label for="female">BINI</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="date" class="field-label">Tanggal</label>
+            <div class="date-input">
+              <input type="date" id="date" aria-label="Tanggal">
+            </div>
+          </div>
+          <button type="submit" class="submit-button">KONFIRMASI</button>
+        </form>
+      </section>
+</body>
+</html>
