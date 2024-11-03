@@ -1,5 +1,6 @@
-<nav class="p-2 navbar fixed-bottom bg-body-tertiary">
-  <div class="container-fluid d-flex justify-content-center pilih-footer align-items-end">
-    <p>&copy; COPYRIGHT TVRI</p>
+<nav class="navbar fixed-bottom">
+  <div class="d-flex justify-content-center pilih-footer align-items-end">
+    <img src="assets/images/pooter.png" alt="nothing" class="footer-image">
+    <p class="footer-text">&copy; COPYRIGHT TVRI</p>
   </div>
 </nav>

@@ -1,24 +1,24 @@
 * {
   font-family: Coolvetica, sans-serif;
-  color: #f6eca9;
+  /* color: #f6eca9; */
 }
 
 .pilih-header {
-  background-color: #596fb7;
+  background-color: #ffffff;
   gap: 40px 100px;
   line-height: 1.2;
   padding: 6px 18px;
 }
 
 .header-top {
-  height: 155.2px;
+  height: 12vh;
 }
 
 .pilih-logo {
   aspect-ratio: 1.69;
   object-fit: contain;
   object-position: center;
-  width: 108px;
+  width: 10vh;
   align-self: stretch;
   margin: auto 0;
 }
@@ -32,14 +32,14 @@
 
 .login-btn {
   align-self: stretch;
-  border-radius: 58px;
+  border-radius: 120px;
   background-color: rgba(17, 35, 90, 1);
-  box-shadow: 4px 10px 1px -3px rgba(5, 14, 181, 0.25);
-  min-height: 68px;
-  font-size: 27px;
-  width: 144px;
+  box-shadow: 4px 7px 1px -3px rgba(5, 14, 181, 0.25);
+  min-height: 3vh;
+  font-size: 16px;
+  width: 17vh;
+  height: 5vh;
   margin: auto 0;
-  padding: 18px 17px;
   border: none;
   color: #C6CF9B;
   cursor: pointer;
@@ -66,7 +66,7 @@
 }
 
 .kembali-btn {
-  align-self: stretch ;
+  align-self: stretch;
   border-radius: 58px;
   background-color: rgba(17, 35, 90, 1);
   box-shadow: 4px 10px 1px -3px rgba(5, 14, 181, 0.25);
@@ -91,7 +91,7 @@
 .kembali-btn:focus {
   background-color: #F6ECA9;
   color: #11235A;
-  box-shadow: 4px 10px 1px -3px #C6CF9B;
+  box-shadow: 4px 7px 1px -3px #C6CF9B;
 }
 
 @media (max-width: 991px) {
@@ -103,34 +103,146 @@
 
 .pilih-main {
   align-self: center;
-  display: flex;
+  /* display: flex; */
   min-height: auto;
-  height: 100%;
+  /* height: 100vh; */
   min-height: 50%;
   /* min-width: 50%; */
   width: 100%;
   max-width: 100%;
-  flex-direction: column;
-  align-items: center;
-  font-size: 33px;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  font-size: 20px;
   line-height: 1.2;
   justify-content: center;
-  /* padding: 15px 30px; */
+  padding: 15px 30px;
   margin: auto;
-  margin-top: 7%;
+  margin-top: 15%;
+}
+
+.media-sosial {
+  position: fixed;
+  left: 0;
+  top: 46%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center icons horizontally */
+  gap: 10px;
+  background-color: #11235A;
+  border-radius: 0px 10px 10px 0px;
+  height: auto;
+  /* Allows flexible height */
+  width: 35px;
+  padding: 10px 0;
+  /* Adds padding around the icons */
+}
+
+.social-logo {
+  font-size: 24px;
+  color: #ffffff;
+  /* Matches your theme color */
+  transition: transform 0.3s;
+}
+
+.social-logo:hover {
+  transform: scale(1.1);
+  color: #F6ECA9;
+  /* Changes color on hover */
+}
+
+.kalimat {
+  width: 660px;
+}
+
+
+@font-face {
+  font-family: Gotham;
+  src: url(../../assets/font/Gotham.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: Avenir;
+  src: url(../../assets/font/Avenir.ttf) format('truetype');
+}
+
+.header-judul {
+  font-family: Gotham;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #11235A;
+}
+
+.kalimat>p {
+    font-family: Avenir;
+    color: #11235A;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #ffffff;
+
+}
+
+
+
+.unlock-regular {
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slide-gambar {
+  position: fixed;
+  left: 0;
+  top: 46%;
+  z-index: -1;
+  transform: translateY(-50%);
+  display: flex;
+  background-color: #ffffff;
+  margin-top: 3%;
+  /* margin-bottom: 3%; */
+  height: 500px;
+  width: 100%;
+}
+
+.slide-tombol {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 40% !important;
+  margin-bottom: 7rem !important;
+  margin-left: 40% !important;
+  gap: 5%;
+  list-style: none;
+}
+
+.menu-option {
+  position: fixed;
+  right: 2%;
+  top: 48%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center icons horizontally */
 }
 
 .pilih-option {
   align-self: center;
-  border-radius: 180px;
+  /* border-radius: 180px; */
   background-color: rgba(17, 35, 90, 0.93);
   box-shadow: 8px 6px 0px 2px #000;
-  min-height: 150px;
-  height: 50%;
-  width: 60%;
-  min-width: 200px;
-  max-width: 100%;
-  min-height: 150px;
+  min-height: 15vh;
+  height: 15vh;
+  width: 26vh;
+  min-width: 26vh;
+  max-width: 30vh;
+  max-height: 18vh;
   overflow: hidden;
   padding: 15px 20px;
   border: 3px solid #f6eca9;
@@ -143,13 +255,47 @@
   justify-content: center;
 }
 
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
 .pilih-footer {
   width: 100%;
-  background-color: #596fb7;
+  /* background-color: #596fb7; */
   min-height: 50px;
   font-size: 18px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+  display: flex;
+  /* Menggunakan flexbox untuk mengatur tata letak */
+  align-items: center;
+  /* Memastikan item di tengah secara vertikal */
 }
+
+.footer-image {
+  position: absolute;
+  max-height: 374px;
+  /* Atur tinggi gambar agar proporsional */
+  max-width: 100%;
+  width: inherit;
+  height: 120px;
+}
+
+.footer-text {
+  position: absolute;
+  margin: 0;
+  /* Menghilangkan margin default pada paragraf */
+  color: #11235A;
+  /* Atur warna teks agar kontras dengan latar belakang */
+}
+
 
 .form-input {
   color: #11235A;
@@ -214,28 +360,28 @@ option {
 #container {
   /* margin-top: 50px ;
   /* margin: 0px auto;*/
-   width: 500px;
-   height: 375px;
+  width: 500px;
+  height: 375px;
   /* border: 10px #333 solid; */
-   background-image: url(snapshots/download.jpg);
-   
+  background-image: url(snapshots/download.jpg);
+
 }
+
 #videoElement {
-   width: 500px;
-   height: 375px;
- 
-}
-.no-padding
-{
- padding-left: 0;
- padding-right: 0;
+  width: 500px;
+  height: 375px;
 
 }
 
-#f_style
-{
-   width: 100%;
-   height: 70%;  
-   margin-right: 10px; 
- 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+#f_style {
+  width: 100%;
+  height: 70%;
+  margin-right: 10px;
+
 }
